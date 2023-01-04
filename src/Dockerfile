@@ -1,4 +1,4 @@
-FROM alpine:3.15
+FROM alpine:3.17
 MAINTAINER tess@ten7.com
 
 # Override some Ansible defaults.

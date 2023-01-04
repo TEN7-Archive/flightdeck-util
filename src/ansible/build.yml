@@ -34,12 +34,10 @@
         - "py3-jmespath"
         - "py3-certifi"
         - "py3-requests"
+        - "s3cmd"
         - "tar"
       notify:
         - clear caches
-    - name: Install s3cmd
-      shell: >
-        apk add s3cmd --repository=http://dl-cdn.alpinelinux.org/alpine/edge/testing
     - name: Install build dependencies in a virtual package
       shell: >
         apk --no-cache \
