@@ -7,7 +7,7 @@ ENV ANSIBLE_NOCOWS 1
 
 # Update the package list and install Ansible.
 RUN apk -U upgrade &&\
-    apk add --update --no-cache ansible-core && \
+    apk add --update --no-cache git ansible-core && \
     rm -rf /tmp/* \
            /var/cache/apk/*
 
